@@ -13,7 +13,7 @@ def carregarAudio(sound_file):
 
 def gerarGrafico(data, fs, sound_file):
     D = librosa.amplitude_to_db(np.abs(librosa.stft(data)))
-    librosa.display.specshow(D, x_axis='time', y_axis='linear', sr=fs, cmap='CMRmap')
+    librosa.display.specshow(D, x_axis='time', y_axis='linear', sr=fs, cmap = 'CMRmap')
     plt.title('Espectrograma ' + sound_file)
     plt.xlabel('Tempo [s]')
     plt.ylabel('Frequência [Hz]')

@@ -11,7 +11,7 @@ def gravar(tempo):
         if ret==True:
             out.write(frame)
 
-            cv2.imshow('frame',frame)
+            #cv2.imshow('frame',frame)
             contador += 1
             if contador == 20 * tempo:
                 break
